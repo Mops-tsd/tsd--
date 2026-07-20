@@ -124,7 +124,7 @@
     };
     const restart = () => {
       clearInterval(timer);
-      timer = setInterval(() => go(idx + 1), 6000);
+      timer = setInterval(() => go(idx + 1), 9500);
     };
     go(0);
     restart();
@@ -143,6 +143,51 @@
         if (p && typeof p.catch === "function") p.catch(function () {});
       });
     }
+  }
+
+  /* ---------- Lightbox for project galleries ---------- */
+  const lightbox = document.getElementById("lightbox");
+  if (lightbox) {
+    const lbImg = lightbox.querySelector("img");
+    const lbCount = lightbox.querySelector(".lightbox__count");
+    let group = [];
+    let pos = 0;
+    const show = () => {
+      const btn = group[pos];
+      if (!btn) return;
+      lbImg.src = btn.dataset.full;
+      lbCount.textContent = (pos + 1) + " / " + group.length;
+    };
+    const openLb = (btn) => {
+      group = Array.from(btn.closest(".pj__gallery").querySelectorAll(".pj__ph"));
+      pos = group.indexOf(btn);
+      show();
+      lightbox.classList.add("is-open");
+      lightbox.setAttribute("aria-hidden", "false");
+      document.body.style.overflow = "hidden";
+    };
+    const closeLb = () => {
+      lightbox.classList.remove("is-open");
+      lightbox.setAttribute("aria-hidden", "true");
+      document.body.style.overflow = "";
+      lbImg.src = "";
+    };
+    const step = (d) => { pos = (pos + d + group.length) % group.length; show(); };
+
+    document.addEventListener("click", (e) => {
+      const ph = e.target.closest(".pj__ph");
+      if (ph) { e.preventDefault(); openLb(ph); }
+    });
+    lightbox.querySelector(".lightbox__close").addEventListener("click", closeLb);
+    lightbox.querySelector(".lightbox__prev").addEventListener("click", (e) => { e.stopPropagation(); step(-1); });
+    lightbox.querySelector(".lightbox__next").addEventListener("click", (e) => { e.stopPropagation(); step(1); });
+    lightbox.addEventListener("click", (e) => { if (e.target === lightbox) closeLb(); });
+    document.addEventListener("keydown", (e) => {
+      if (!lightbox.classList.contains("is-open")) return;
+      if (e.key === "Escape") closeLb();
+      else if (e.key === "ArrowLeft") step(-1);
+      else if (e.key === "ArrowRight") step(1);
+    });
   }
 
   /* ---------- Forms (front-end only) ---------- */
@@ -211,7 +256,7 @@
     "nav.news": "News",
     "nav.contacts": "Contacts",
     "nav.cta": "Get in touch",
-    "nav.call": "Request a call",
+    "nav.call": "Discuss a project",
     // hero
     "hero.badge": "Federal developer · <b>since 2008</b>",
     "hero.title": "Federal developer and <span class=\"accent\">investment group</span>",
@@ -302,7 +347,7 @@
     "quote.eyebrow": "Group philosophy",
     "quote.title": "Where it's hard, it's interesting",
     "quote.sub": "We come to regions seriously and for the long term. We build not just houses, but cities with character.",
-    "quote1.t": "We go to regions where nothing new has been built for a long time. We want to give people the feeling that their city is developing.",
+    "quote1.t": "Quality neighbourhoods and the happiness of families can be designed and built.",
     "quote1.a": "TSD Group leadership",
     "quote1.r": "from the group's brand platform",
     "quote2.t": "People need warm homes, developed infrastructure, a civilised environment. That is what we create.",
