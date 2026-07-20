@@ -4,37 +4,33 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Направления — TSD Group</title>
-  <meta name="description" content="Направления TSD Group: комплексное развитие территорий, логистика, производство, инвестиции, промышленное и гражданское строительство, ГЧП." />
+  <meta name="description" content="Направления TSD Group: комплексное развитие территорий, логистика, собственное производство в Иркутске и Белгороде, торговля AP TRADE, инвестиции и ГЧП." />
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" href="assets/fonts/manrope-cyrillic.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="preload" href="assets/fonts/manrope-latin.woff2" as="font" type="font/woff2" crossorigin />
+  <link rel="stylesheet" href="assets/css/fonts.css" />
   <link rel="stylesheet" href="assets/css/style.css" />
 </head>
 <body>
 
   <header class="site-header">
     <div class="container nav">
-      <a href="index.html" class="logo" aria-label="TSD Group">
-        <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-          <path d="M11 37V21l6-4v20z" fill="#274169"/><path d="M20 37V15l6-4v26z" fill="#3a5786"/>
-          <path d="M8 22 26 9l3.4 4.6L11.4 26.6z" fill="#ef7a2b"/><path d="M30 37V16h6v21z" fill="#ef7a2b"/>
-        </svg>
-        <span class="logo__text"><b>TSD Group</b><span>Группа компаний</span></span>
+      <a href="index.html" class="logo" aria-label="TSD Group — на главную">
+        <img src="assets/img/logo.svg" alt="TSD Group" style="height:34px;width:auto" />
       </a>
       <nav class="nav__links" aria-label="Основная навигация">
         <a class="nav__link" href="index.html" data-i18n="nav.home">Главная</a>
         <a class="nav__link" href="about.html" data-i18n="nav.about">О группе</a>
         <a class="nav__link is-active" href="services.html" data-i18n="nav.services">Направления</a>
         <a class="nav__link" href="projects.html" data-i18n="nav.projects">Проекты</a>
-        <a class="nav__link" href="index.html#geo" data-i18n="nav.geography">География</a>
+        <a class="nav__link" href="news.html" data-i18n="nav.news">Новости</a>
         <a class="nav__link" href="contacts.html" data-i18n="nav.contacts">Контакты</a>
       </nav>
       <div class="nav__right">
         <div class="lang" role="group" aria-label="Язык / Language">
           <button data-lang="ru" class="is-active">RU</button><button data-lang="en">EN</button>
         </div>
-        <a href="contacts.html" class="btn btn--primary nav__cta" data-i18n="nav.cta">Связаться</a>
+        <button class="btn btn--primary nav__cta" data-open-callback data-i18n="nav.call">Заказать звонок</button>
         <button class="burger" aria-label="Меню" aria-expanded="false"><span></span><span></span><span></span></button>
       </div>
     </div>
@@ -45,7 +41,7 @@
     <a href="about.html" data-i18n="nav.about">О группе <span>02</span></a>
     <a href="services.html" data-i18n="nav.services">Направления <span>03</span></a>
     <a href="projects.html" data-i18n="nav.projects">Проекты <span>04</span></a>
-    <a href="index.html#geo" data-i18n="nav.geography">География <span>05</span></a>
+    <a href="news.html" data-i18n="nav.news">Новости <span>05</span></a>
     <a href="contacts.html" data-i18n="nav.contacts">Контакты <span>06</span></a>
     <div class="drawer__foot"><p>+7 (495) 928-78-88</p><a href="mailto:info@tsr-gr.ru">info@tsr-gr.ru</a></div>
   </div>
@@ -54,7 +50,7 @@
     <div class="container page-hero__inner">
       <div class="breadcrumb"><a href="index.html" data-i18n="nav.home">Главная</a> / <span data-i18n="nav.services">Направления</span></div>
       <h1 data-i18n="serv.h1">Полный цикл — от инвестиции до ключей</h1>
-      <p data-i18n="serv.sub">Вертикально интегрированная группа объединяет девелопмент, логистику, производство и инвестиции в единую систему.</p>
+      <p data-i18n="serv.sub">Вертикально интегрированная группа объединяет девелопмент, логистику, собственное производство и инвестиции в единую систему.</p>
     </div>
   </section>
 
@@ -70,12 +66,12 @@
         <article class="dir reveal" data-delay="1">
           <span class="dir__n">02</span>
           <h3 data-i18n="dir2.t">Логистика</h3>
-          <p data-i18n="serv.d2">Транспортная и складская инфраструктура, связывающая удалённые регионы Дальнего Востока, Сибири и Арктики с национальными цепочками поставок.</p>
+          <p data-i18n="serv.d2">Транспортная и складская инфраструктура, торговля контейнерами и спецтехникой, роботизация складов — связываем удалённые регионы с национальными цепочками поставок.</p>
         </article>
         <article class="dir reveal" data-delay="0">
           <span class="dir__n">03</span>
           <h3 data-i18n="dir3.t">Производство</h3>
-          <p data-i18n="serv.d3">Собственная производственная база строительных материалов и конструкций обеспечивает контроль себестоимости, сроков и качества на каждом объекте.</p>
+          <p data-i18n="serv.d3">Собственные производственные базы в Иркутске и Белгороде: металлоконструкции и блок-секции, технологии каркасного и бескаркасного строительства.</p>
         </article>
         <article class="dir reveal" data-delay="1">
           <span class="dir__n">04</span>
@@ -86,45 +82,96 @@
     </div>
   </section>
 
-  <!-- ADDITIONAL SERVICES -->
+  <!-- SERVICES LIST (со старого сайта) -->
   <section class="section section--paper">
     <div class="container">
       <div class="section-head reveal">
-        <span class="eyebrow" data-i18n="serv.also.eyebrow">Компетенции</span>
+        <span class="eyebrow" data-i18n="serv.also.eyebrow">Услуги</span>
         <h2 data-i18n="serv.also.t">Что мы строим</h2>
-        <p class="lead" data-i18n="serv.also.sub">За 15 лет группа накопила экспертизу в самых требовательных сегментах строительства.</p>
+        <p class="lead" data-i18n="serv.also.sub">Полный комплекс работ — от многофункциональных комплексов и жилой недвижимости до обустройства нефтяных месторождений. Один из лидеров рынка по строительству площадочных объектов и систем трубопроводного транспорта в России.</p>
       </div>
       <div class="grid grid--3">
         <article class="card reveal" data-delay="0">
           <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M9 17h.01M15 9h.01M15 13h.01M15 17h.01"/></svg></div>
-          <h3 data-i18n="serv.c1.t">Жилищное строительство</h3>
-          <p data-i18n="serv.c1.d">Жилые комплексы комфорт- и бизнес-класса — от студий до семейных квартир с продуманными планировками.</p>
+          <h3 data-i18n="serv.c1.t">Жилые комплексы и микрорайоны</h3>
+          <p data-i18n="serv.c1.d">Комплексная застройка кварталов с инфраструктурными и социальными объектами — от студий до семейных квартир.</p>
         </article>
         <article class="card reveal" data-delay="1">
           <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 20h20M4 20V8l6-4 6 4M14 20V4l6 4v12M8 12h.01M8 16h.01"/></svg></div>
           <h3 data-i18n="serv.c2.t">Промышленное и гражданское строительство</h3>
-          <p data-i18n="serv.c2.d">Объекты нефтегазовой и промышленной инфраструктуры, социальные и коммерческие здания под ключ.</p>
+          <p data-i18n="serv.c2.d">Обустройство нефтяных месторождений, строительство и реконструкция объектов добычи, сервисное обслуживание.</p>
         </article>
         <article class="card reveal" data-delay="2">
           <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2 4 6v6c0 5 3.5 8 8 10 4.5-2 8-5 8-10V6l-8-4z"/><path d="M9 12l2 2 4-4"/></svg></div>
           <h3 data-i18n="serv.c3.t">Государственно-частное партнёрство</h3>
-          <p data-i18n="serv.c3.d">Реализация социально значимых проектов совместно с государством — школы, спорт, дороги и инженерные сети.</p>
+          <p data-i18n="serv.c3.d">Долгосрочные проекты с государством: школы, доступное арендное жильё, модернизация ЖКХ и реконструкция микрорайонов.</p>
         </article>
         <article class="card reveal" data-delay="0">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3v18h18M7 15l4-4 3 3 5-6"/></svg></div>
-          <h3 data-i18n="serv.c4.t">Социальные объекты</h3>
-          <p data-i18n="serv.c4.d">Центры единоборств, бассейны, торгово-развлекательные центры и общественные пространства.</p>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 21V9l8-6 8 6v12M9 21v-6h6v6M2 21h20"/></svg></div>
+          <h3 data-i18n="serv.c4.t">Благоустройство городской среды</h3>
+          <p data-i18n="serv.c4.d">Дворы без машин, парки и общественные пространства — среда, в которой хочется жить.</p>
         </article>
         <article class="card reveal" data-delay="1">
           <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 9h18M3 9l2-5h14l2 5M5 9v11h14V9M9 13h6"/></svg></div>
-          <h3 data-i18n="serv.c5.t">Инфраструктура</h3>
-          <p data-i18n="serv.c5.d">Дороги, инженерные сети, вертолётные площадки и ливневые системы в сложных климатических условиях.</p>
+          <h3 data-i18n="serv.c5.t">Инженерная инфраструктура</h3>
+          <p data-i18n="serv.c5.d">Очистные сооружения, котельные, наружные сети, объекты ЖКХ, вертолётные площадки и ливневые системы.</p>
         </article>
         <article class="card reveal" data-delay="2">
-          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 7h18v12H3zM3 7l3-4h12l3 4M9 12h6"/></svg></div>
-          <h3 data-i18n="serv.c6.t">Торговля</h3>
-          <p data-i18n="serv.c6.d">Торговое направление группы, включая сеть круглогодичных ярмарок в составе жилых кварталов.</p>
+          <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2v4M12 18v4M2 12h4M18 12h4M5 5l3 3M16 16l3 3M5 19l3-3M16 8l3-3"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3 data-i18n="serv.c6.t">Сложные климатические условия</h3>
+          <p data-i18n="serv.c6.d">Реализация масштабных проектов в Арктике и на Дальнем Востоке — там, где строить труднее всего. Строительство «под ключ».</p>
         </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRODUCTION -->
+  <section class="section section--dark" id="production">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="eyebrow" data-i18n="prod.eyebrow">Производство</span>
+        <h2 data-i18n="prod.t">Крупнейший игрок быстровозводимого строительства</h2>
+        <p class="lead" data-i18n="prod.sub">Собственное производство металлоконструкций и блок-секций. Две производственные базы — Иркутск и Белгород, отлаженная логистика и сеть филиалов позволяют эффективно работать по всей России.</p>
+      </div>
+      <div class="geo__stats reveal" style="grid-template-columns:repeat(2,1fr);max-width:640px">
+        <div class="geo__stat"><b>3 000 м²</b><span data-i18n="prod.s1">производственные цеха</span></div>
+        <div class="geo__stat"><b>10 000 м²</b><span data-i18n="prod.s2">производственные площадки</span></div>
+        <div class="geo__stat"><b>2</b><span data-i18n="prod.s3">базы: Иркутск и Белгород</span></div>
+        <div class="geo__stat"><b>2</b><span data-i18n="prod.s4">технологии: каркасная и бескаркасная</span></div>
+      </div>
+      <div class="grid grid--2" style="margin-top:34px">
+        <article class="dir reveal" data-delay="0">
+          <span class="dir__n" data-i18n="prod.f1.tag">Каркасное строительство</span>
+          <h3 data-i18n="prod.f1.t">От госпиталя до аэропорта</h3>
+          <p data-i18n="prod.f1.d">Инфекционный госпиталь на 5 500 м², боксы спецтехники для аэропорта Иркутска, главный корпус ЗИФ на 8 550 м² для ГК «Мангазея», общежитие на 200 человек для «Бурятзолота», аварийно-спасательный центр МЧС на Сахалине.</p>
+        </article>
+        <article class="dir reveal" data-delay="1">
+          <span class="dir__n" data-i18n="prod.f2.tag">Бескаркасное строительство</span>
+          <h3 data-i18n="prod.f2.t">Спортивные объекты для лидеров</h3>
+          <p data-i18n="prod.f2.d">Физкультурно-оздоровительные центры от 530 до 1 800 м² для «Роснефти», «Востокгеологии», «Бурятзолота» и «Гранд-Байкала» — быстро, тепло и надёжно в любом климате.</p>
+        </article>
+      </div>
+      <div class="grid grid--3" style="margin-top:20px">
+        <div class="photo-card reveal" data-delay="0"><img src="assets/img/photo/plant.jpg" alt="Промышленное производство TSD Group" loading="lazy"></div>
+        <div class="photo-card reveal" data-delay="1"><img src="assets/img/photo/machines.jpg" alt="Строительная техника на площадке" loading="lazy"></div>
+        <div class="photo-card reveal" data-delay="2"><img src="assets/img/photo/building.jpg" alt="Быстровозводимое здание TSD Group" loading="lazy"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRADE -->
+  <section class="section" id="trade">
+    <div class="container">
+      <div class="grid grid--2" style="align-items:center;gap:44px">
+        <div class="reveal">
+          <span class="eyebrow" data-i18n="trade.eyebrow">Торговля · AP TRADE</span>
+          <h2 data-i18n="trade.t">Техника, контейнеры, логистика</h2>
+          <p class="lead" data-i18n="trade.d">Торговое направление группы: спецтехника, крановая и грузовая техника, строительное оборудование и трубная продукция. Логистика и торговля морскими контейнерами 20 и 40 футов — компании «Эмирс» и «Эмирс Трейдинг».</p>
+          <a class="btn btn--ghost" style="border-color:var(--line)" href="https://aptrade.ru/building" target="_blank" rel="noopener" data-i18n="trade.link">AP TRADE — сайт направления ↗</a>
+        </div>
+        <div class="photo-card reveal" data-delay="1" style="aspect-ratio:16/11">
+          <img src="assets/img/photo/pipeline.jpg" alt="Трубопроводная продукция" loading="lazy">
+        </div>
       </div>
     </div>
   </section>
@@ -135,50 +182,85 @@
         <h2 data-i18n="cta.title">Построим будущее вместе</h2>
         <p data-i18n="cta.sub">От инвестиций до передачи ключей — обсудите с нашей командой ваш проект или партнёрство.</p>
         <div class="cta__actions">
-          <a href="contacts.html" class="btn btn--primary" data-i18n="cta.btn1">Связаться с нами</a>
+          <button class="btn btn--primary" data-open-callback data-i18n="nav.call">Заказать звонок</button>
           <a href="projects.html" class="btn btn--ghost" data-i18n="cta.btn2">Посмотреть проекты</a>
         </div>
       </div>
     </div>
   </section>
 
+    <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container">
       <div class="footer-top">
         <div class="footer-brand">
           <a href="index.html" class="logo" aria-label="TSD Group">
-            <svg class="logo__mark" viewBox="0 0 48 48" aria-hidden="true">
-              <path d="M11 37V21l6-4v20z" fill="#274169"/><path d="M20 37V15l6-4v26z" fill="#3a5786"/>
-              <path d="M8 22 26 9l3.4 4.6L11.4 26.6z" fill="#ef7a2b"/><path d="M30 37V16h6v21z" fill="#ef7a2b"/>
-            </svg>
-            <span class="logo__text"><b style="color:#fff">TSD Group</b><span>Группа компаний</span></span>
+            <img src="assets/img/logo-white.svg" alt="TSD Group" style="height:40px;width:auto" />
           </a>
-          <p data-i18n="foot.about">Федеральный девелопер и инвестиционная группа, создающая комфортную среду на Дальнем Востоке, в Сибири и Арктике.</p>
+          <p data-i18n="foot.about">Федеральный девелопер и инвестиционная группа, создающая комфортную среду на Дальнем Востоке, в Сибири и Арктике. На рынке с 2008 года.</p>
         </div>
         <div class="footer-cols">
           <div class="footer-col">
             <h4 data-i18n="foot.company">Компания</h4>
-            <a href="about.html" data-i18n="nav.about">О группе</a><a href="projects.html" data-i18n="nav.projects">Проекты</a>
-            <a href="index.html#geo" data-i18n="nav.geography">География</a><a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
+            <a href="about.html" data-i18n="nav.about">О группе</a>
+            <a href="projects.html" data-i18n="nav.projects">Проекты</a>
+            <a href="news.html" data-i18n="nav.news">Новости</a>
+            <a href="index.html#geo" data-i18n="nav.geography">География</a>
+            <a href="contacts.html" data-i18n="nav.contacts">Контакты</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="foot.directions">Направления</h4>
-            <a href="services.html" data-i18n="dir1.t">Развитие территорий</a><a href="services.html" data-i18n="dir2.t">Логистика</a>
-            <a href="services.html" data-i18n="dir3.t">Производство</a><a href="services.html" data-i18n="dir4.t">Инвестиции</a>
+            <a href="services.html" data-i18n="dir1.t">Развитие территорий</a>
+            <a href="services.html#production" data-i18n="dir3.t">Производство</a>
+            <a href="services.html#trade" data-i18n="foot.trade">Торговля — AP TRADE</a>
+            <a href="services.html" data-i18n="dir4.t">Инвестиции</a>
           </div>
           <div class="footer-col">
             <h4 data-i18n="foot.contacts">Контакты</h4>
-            <a href="tel:+74959287888">+7 (495) 928-78-88</a><a href="mailto:info@tsr-gr.ru">info@tsr-gr.ru</a>
-            <p>Москва, БЦ «Нордстар Тауэр»,<br>ул. Беговая, 3, офис 501</p>
+            <a href="tel:+74959287888">+7 (495) 928-78-88</a>
+            <a href="mailto:info@tsr-gr.ru">info@tsr-gr.ru</a>
+            <p>Москва, БЦ «Нордстар Тауэр»,<br>ул. Беговая, д. 3, стр. 1, офис 501</p>
           </div>
         </div>
       </div>
       <div class="footer-bottom">
         <p>© <span data-year></span> TSD Group · ГК «ТрансСтрой Девелопмент». <span data-i18n="foot.rights">Все права защищены.</span></p>
-        <a href="#" data-i18n="foot.privacy">Политика конфиденциальности</a>
+        <a href="privacy.html" data-i18n="foot.privacy">Политика конфиденциальности</a>
       </div>
     </div>
   </footer>
+
+    <!-- ============ CALLBACK MODAL ============ -->
+  <div class="modal" role="dialog" aria-modal="true" aria-label="Заказать звонок">
+    <div class="modal__card">
+      <button class="modal__close" aria-label="Закрыть">✕</button>
+      <h3 data-i18n="cb.title">Оставить заявку</h3>
+      <p class="sub" data-i18n="cb.sub">Оставьте свой номер — и менеджер перезвонит вам. С удовольствием расскажем о наших услугах.</p>
+      <form class="lead-form" novalidate>
+        <div class="field">
+          <label for="cb-name" data-i18n="cb.name">Имя</label>
+          <input id="cb-name" name="name" type="text" autocomplete="name" />
+        </div>
+        <div class="field">
+          <label for="cb-phone" data-i18n="cb.phone">Номер телефона</label>
+          <input id="cb-phone" name="phone" type="tel" required autocomplete="tel" placeholder="+7 (___) ___-__-__" />
+        </div>
+        <p class="slot-label" data-i18n="cb.day">Удобный день</p>
+        <div class="slots" data-days></div>
+        <p class="slot-label" data-i18n="cb.time">Удобное время (МСК)</p>
+        <div class="slots" data-times></div>
+        <div class="form-status" data-msg="Спасибо! Мы перезвоним вам в выбранное время." style="margin-top:12px"></div>
+        <button type="submit" class="btn btn--primary" style="margin-top:14px;width:100%" data-i18n="cb.submit">Отправить</button>
+        <p class="form-note" data-i18n="cb.note">Нажимая кнопку, вы соглашаетесь на обработку персональных данных.</p>
+      </form>
+    </div>
+  </div>
+
+  <!-- Floating call button (mobile) -->
+  <button class="fab-call" data-open-callback aria-label="Заказать звонок">
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.9v3a2 2 0 0 1-2.2 2 19.8 19.8 0 0 1-8.6-3 19.5 19.5 0 0 1-6-6 19.8 19.8 0 0 1-3-8.6A2 2 0 0 1 4.1 2h3a2 2 0 0 1 2 1.7c.1.9.4 1.8.7 2.7a2 2 0 0 1-.5 2.1L8.1 9.9a16 16 0 0 0 6 6l1.4-1.2a2 2 0 0 1 2.1-.4c.9.3 1.8.6 2.7.7a2 2 0 0 1 1.7 2z"/></svg>
+  </button>
+
 
   <script src="assets/js/main.js"></script>
 </body>
