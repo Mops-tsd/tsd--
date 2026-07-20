@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg width="454.268mm" height="106.151mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd" viewBox="0 0 45427 10615" xmlns="http://www.w3.org/2000/svg" xmlns:bx="https://boxy-svg.com">
+  <defs>
+    <style bx:fonts="Arial">@font-face { font-family: Arial; font-variant: normal; font-weight: bold; }</style>
+    <style type="text/css">.fil4 { fill: black; }.fil1 { fill: rgb(0, 74, 150); }.fil0 { fill: rgb(50, 50, 51); }.fil2 { fill: rgb(240, 131, 21); }.fil3 { fill: rgb(248, 201, 152); }.fnt0 { font-weight: bold; font-size: 5476.88px; font-family: Arial; }</style>
+  </defs>
+  <g id="Слой_x0020_1">
+    <g id="_2197938949568">
+      <g id="_613187432">
+        <path id="svg_4" class="fil0" d="M-24 6086c40,172 2052,3606 2268,3964 106,177 228,384 326,569 214,-114 395,-219 609,-345 112,-67 192,-111 305,-172 120,-66 199,-124 319,-189 218,-119 389,-230 605,-348 145,-79 509,-318 637,-348 -50,-68 -601,-372 -758,-464 -371,-219 -248,-210 -794,105 -184,106 -347,200 -536,300 -59,-113 -122,-202 -188,-319l-577 -1003c-137,-227 -250,-430 -385,-659 -73,-125 -125,-226 -193,-344 -57,-99 -166,-227 -177,-359l4681 -2684 0 -1222c-104,24 -297,154 -389,207l-3445 1982c-268,159 -508,287 -775,448 -135,81 -242,139 -380,216 -134,75 -250,149 -378,218 -259,140 -513,309 -775,447l0 0z"/>
+        <path id="svg_5" class="fil1" d="M9756 5907c350,185 664,382 1014,567 -15,177 -656,1190 -744,1343l-777 1341 -2160 -1240c-250,-148 -471,-263 -719,-414 -94,-56 -1744,-1018 -1803,-1017 -59,1 -749,431 -885,503 -113,59 -127,26 -158,140 153,35 3995,2268 4575,2611l1538 878 2297 -3965c108,-188 223,-373 326,-568l-1865 -1056c-142,-84 -507,-314 -639,-345l0 1222 0 0z"/>
+        <path id="svg_6" class="fil2" d="M4568 1047l3100 13 4 5414c141,101 346,213 504,298 129,70 411,265 536,298l0 -7067 -5218 0c56,84 946,1010 1074,1044l0 0z"/>
+        <path id="svg_7" class="fil3" d="M7672 6474l-4 -5414 -3100 -13 3071 30 2 5335c14,66 5,26 31,62z"/>
+      </g>
+      <g transform="matrix(1 0 0 1 -9511.36 2338.95)">
+        <text x="22713" y="5308" id="svg_9" class="fil4 fnt0" style="white-space: pre;">TSD Group</text>
+        <text x="42551" y="5308" id="svg_9" class="fil4 fnt0" style="white-space: pre;"> </text>
+        <text x="38595" y="5308" id="svg_9" class="fil4 fnt0" style="white-space: pre;"> </text>
+      </g>
+      <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="7926.411" y="17118.383">A</text>
+      <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="10657.358" y="3330.425">Enter your text here</text>
+      <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="8925.538" y="2930.774">Enter your text here</text>
+      <text style="white-space: pre; fill: rgb(51, 51, 51); font-family: Arial, sans-serif; font-size: 28px;" x="9658.231" y="2597.731">Enter your text here</text>
+    </g>
+  </g>
+</svg>
