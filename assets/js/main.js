@@ -130,6 +130,21 @@
     restart();
   }
 
+  /* ---------- Film play button (перенос ролика со старого сайта) ---------- */
+  const filmPlayer = document.getElementById("filmPlayer");
+  if (filmPlayer) {
+    const video = filmPlayer.querySelector("video");
+    const poster = filmPlayer.querySelector(".film__poster");
+    if (video && poster) {
+      poster.addEventListener("click", () => {
+        filmPlayer.classList.add("is-playing");
+        video.setAttribute("preload", "auto");
+        const p = video.play();
+        if (p && typeof p.catch === "function") p.catch(function () {});
+      });
+    }
+  }
+
   /* ---------- Forms (front-end only) ---------- */
   document.querySelectorAll("form.lead-form").forEach((form) => {
     form.addEventListener("submit", (e) => {
@@ -217,12 +232,36 @@
     // stats
     "stats.eyebrow": "Scale",
     "stats.title": "Scale that speaks for itself",
+    "stats.lead": "Russia is a country of scale and diversity. We build across the most varied regions — from temperate zones to the most climatically challenging — creating new points of economic growth where people live and work in comfort.",
     "stat.years": "years of experience — on the market since 2008",
     "stat.years2": "on the market — since 2008",
     "stat.staff": "employees",
     "stat.built": "m² delivered",
     "stat.coverage": "of Russia's territory",
+    "stat.years.t": "of experience",
+    "stat.years.d": "on the market since 2008 — from oil-and-gas infrastructure to federal development.",
+    "stat.staff.t": "employees",
+    "stat.staff.d": "engineers, builders and designers across 11 offices and branches nationwide.",
+    "stat.built.t": "delivered",
+    "stat.built.d": "housing, schools, kindergartens and sports facilities — from Vladivostok to Murmansk.",
+    "stat.coverage.t": "of Russia's territory",
+    "stat.coverage.d": "we work where others don't: the Far East, Siberia and the Arctic zone.",
     "about.years.u": "years",
+    // country facts (from brand deck)
+    "country.label": "Russia in numbers",
+    "country.mln": "million",
+    "country.people": "people",
+    "country.peoples": "peoples",
+    "country.zones": "climatic zones",
+    // film
+    "film.eyebrow": "Film about the group",
+    "film.slogan": "We build where <span class=\"accent\">Russia is</span>",
+    "film.lead": "At the scale of the country — with attention to everyone. We shape modern urban spaces and new points of economic growth across the most varied regions: from temperate zones to climatically challenging territories.",
+    "film.a1": "Federal scale",
+    "film.a2": "Partnership with the state",
+    "film.a3": "Knowledge of regional specifics",
+    "film.a4": "Integrated approach to development",
+    "film.cap": "Corporate film",
     // directions
     "dir.eyebrow": "What we do",
     "dir.title": "Four directions, one system",
@@ -260,17 +299,21 @@
     "geo.s3": "offices and branches",
     "geo.s4": "production bases",
     // quote
-    "quote.eyebrow": "Our philosophy",
-    "quote.title": "Why we build",
-    "quote1.t": "What matters is creating not just square metres, but complete urban environments with transport and social infrastructure.",
-    "quote1.a": "Alexander Taskaev",
-    "quote1.r": "Board member, Director for Development and Strategic Planning — SPIEF-2026",
-    "quote2.t": "We raise the quality of life for people and future generations, using advanced technology and the contribution of the best specialists. Responsibility to people is the key condition of trust in the company.",
-    "quote2.a": "TSD Group",
-    "quote2.r": "the group's mission",
-    "quote3.t": "Sustainable development is only possible by combining an industrial base, logistics infrastructure, development expertise and international partnership.",
-    "quote3.a": "Alexander Taskaev",
-    "quote3.r": "from an interview with RBC TV, Industries SPB",
+    "quote.eyebrow": "Group philosophy",
+    "quote.title": "Where it's hard, it's interesting",
+    "quote.sub": "We come to regions seriously and for the long term. We build not just houses, but cities with character.",
+    "quote1.t": "We go to regions where nothing new has been built for a long time. We want to give people the feeling that their city is developing.",
+    "quote1.a": "TSD Group leadership",
+    "quote1.r": "from the group's brand platform",
+    "quote2.t": "People need warm homes, developed infrastructure, a civilised environment. That is what we create.",
+    "quote2.a": "TSD Group leadership",
+    "quote2.r": "from the group's brand platform",
+    "quote3.t": "To be a federal developer means taking responsibility for the future of hundreds of thousands of people: changing the face of cities and launching new points of growth — from Murmansk to the Far East, from Arkhangelsk to Zabaykalye.",
+    "quote3.a": "TSD Group leadership",
+    "quote3.r": "from the group's brand platform",
+    "quote4.t": "What matters is creating not just square metres, but complete urban environments with transport and social infrastructure.",
+    "quote4.a": "Alexander Taskaev",
+    "quote4.r": "Board member, Director for Development — SPIEF-2026",
     // partners
     "part.eyebrow": "Partners",
     "part.title": "Trusted by industry leaders",
