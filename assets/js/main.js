@@ -497,7 +497,7 @@
     "proj.chita.s2": "6,468 apartments",
     "proj.chita.s3": "10,000 residents",
     "proj.chita.s4": "car-free courtyards",
-    "proj.chita.sales": "Sales office: +7 914 357-75-75 · +7 (3022) 57-75-75 · kenon-park.ru",
+    "proj.chita.sales": "Sales office: <a href=\"tel:+79143577575\" style=\"color:#fff;text-decoration:underline\">+7 914 357-75-75</a> · <a href=\"tel:+73022577575\" style=\"color:#fff;text-decoration:underline\">+7 (3022) 57-75-75</a> · <a href=\"https://kenon-park.ru\" target=\"_blank\" rel=\"noopener\" style=\"color:#fff;text-decoration:underline\">kenon-park.ru</a>",
     "proj.arkhan.d2": "A 200-ha district by Talagi airport: 1.128 M m² of housing, 17,400 apartments, kindergartens for 1,800 children, schools for 3,000 pupils, a water park and a Sports Palace. Investment — ₽171 bn, 800 new jobs.",
     "proj.murm1.d": "A district in Murmansk's Pervomaysky okrug: parks, squares and a full set of services by the Kola highway. 3,941 apartments for 7,000 residents.",
     "proj.rosl.t": "Residential complex in Roslyakovo",
