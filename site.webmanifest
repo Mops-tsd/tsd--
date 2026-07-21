@@ -1,0 +1,13 @@
+{
+  "name": "TSD Group — ГК «ТрансСтрой Девелопмент»",
+  "short_name": "TSD Group",
+  "description": "Федеральный девелопер и инвестиционная группа",
+  "start_url": ".",
+  "display": "standalone",
+  "background_color": "#0a1420",
+  "theme_color": "#0e1a2b",
+  "lang": "ru",
+  "icons": [
+    { "src": "assets/img/favicon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}
