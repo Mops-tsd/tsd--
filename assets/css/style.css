@@ -233,9 +233,9 @@ p { margin: 0 0 1em; }
   background: rgba(255,255,255,.05); border: 1px solid var(--line-dark);
   border-radius: 14px; padding: 16px 20px; backdrop-filter: blur(4px);
 }
-.metric-chip b { font-size: clamp(1.9rem, 5vw, 2.6rem); font-weight: 800; color: #fff; letter-spacing: -.02em; line-height: 1; white-space: nowrap; flex: none; }
-.metric-chip b small { font-size: .5em; font-weight: 700; color: var(--orange-300); margin-left: 4px; white-space: nowrap; }
-.metric-chip span { font-size: .95rem; color: var(--on-dark-soft); }
+.metric-chip b { font-size: clamp(2.3rem, 5.4vw, 3.1rem); font-weight: 800; color: #fff; letter-spacing: -.02em; line-height: 1; white-space: nowrap; flex: none; }
+.metric-chip b small { font-size: .46em; font-weight: 700; color: var(--orange-300); margin-left: 4px; white-space: nowrap; }
+.metric-chip span { font-size: 1rem; color: var(--on-dark-soft); }
 
 /* Hero visual — animated building */
 .hero__visual { position: relative; min-height: 320px; display: flex; align-items: flex-end; justify-content: center; }
@@ -347,6 +347,7 @@ p { margin: 0 0 1em; }
   display: grid; place-items: center; background: rgba(47,119,230,.16); color: var(--orange-300);
 }
 .film__accents .tick svg { width: 13px; height: 13px; }
+.film__actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 28px; }
 
 .film__player {
   position: relative; border-radius: var(--radius-lg); overflow: hidden;
@@ -481,7 +482,8 @@ p { margin: 0 0 1em; }
 .geo__stats { display: grid; grid-template-columns: repeat(2,1fr); gap: 14px; }
 .geo__stat { background: rgba(255,255,255,.05); border: 1px solid var(--line-dark); border-radius: var(--radius-sm); padding: 22px 22px 20px; }
 .geo__stat b { font-size: 2.1rem; font-weight: 800; color: #fff; display: block; line-height: 1; margin-bottom: 8px; }
-.geo__stat span { font-size: 1.02rem; font-weight: 600; color: var(--on-dark); line-height: 1.35; }
+.geo__stat b span { font-size: inherit; font-weight: inherit; color: inherit; }
+.geo__stat > span { font-size: 1.02rem; font-weight: 600; color: var(--on-dark); line-height: 1.35; }
 .geo__list { columns: 2; column-gap: 26px; margin: 20px 0 0; padding: 0; list-style: none; }
 .geo__list li { color: var(--on-dark-soft); font-size: .95rem; padding: 6px 0 6px 22px; position: relative; break-inside: avoid; }
 .geo__list li::before { content: ""; position: absolute; left: 0; top: 13px; width: 8px; height: 8px; background: var(--orange); border-radius: 2px; }
@@ -768,6 +770,27 @@ p { margin: 0 0 1em; }
 .value h3 { margin-bottom: 6px; }
 .value p { color: var(--ink-soft); margin: 0; }
 
+/* Team / leadership cards */
+.team { display: grid; gap: 18px; grid-template-columns: 1fr; }
+@media (min-width: 720px) { .team { grid-template-columns: 1fr 1fr; } }
+.person {
+  display: flex; gap: 18px; align-items: flex-start;
+  background: var(--navy-800); border: 1px solid var(--line-dark); border-radius: var(--radius);
+  padding: 24px; transition: transform .3s var(--ease), background .3s;
+}
+.person:hover { transform: translateY(-4px); background: var(--navy-700); }
+.person__ava {
+  flex: none; width: 66px; height: 66px; border-radius: 50%; display: grid; place-items: center;
+  font-weight: 800; font-size: 1.35rem; color: #fff; letter-spacing: .02em;
+  background: linear-gradient(135deg, var(--orange), var(--navy-600));
+}
+.person__ava--tbd { background: rgba(255,255,255,.06); color: var(--on-dark-soft); }
+.person__ava--tbd svg { width: 32px; height: 32px; }
+.person__role { display: block; font-size: .74rem; font-weight: 800; letter-spacing: .08em; text-transform: uppercase; color: var(--orange-300); margin-bottom: 7px; line-height: 1.3; }
+.person__info h3 { color: #fff; font-size: 1.18rem; margin-bottom: 8px; }
+.person__info p { color: var(--on-dark-soft); font-size: .95rem; margin: 0; }
+.person--tbd h3 { color: var(--on-dark-soft); }
+
 /* Timeline */
 .timeline { position: relative; padding-left: 26px; }
 .timeline::before { content:""; position: absolute; left: 5px; top: 6px; bottom: 6px; width: 2px; background: var(--line); }
@@ -864,9 +887,9 @@ form.lead-form { display: grid; gap: 14px; }
   .hero__actions { gap: 10px; }
   .hero__actions .btn { flex: 1 1 46%; padding: 15px 14px; }
   .hero__metrics { margin-top: 2px; gap: 10px; }
-  .metric-chip { padding: 13px 16px; gap: 12px; }
-  .metric-chip b { font-size: 1.6rem; }
-  .metric-chip span { font-size: .9rem; }
+  .metric-chip { padding: 14px 16px; gap: 12px; }
+  .metric-chip b { font-size: 2rem; }
+  .metric-chip span { font-size: .95rem; }
 
   /* Tighter vertical rhythm so the page is far shorter */
   .section { padding: 42px 0; }
