@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://mops-tsd.github.io/tsd--/sitemap.xml
+Sitemap: https://tsr-gr.ru/sitemap.xml
