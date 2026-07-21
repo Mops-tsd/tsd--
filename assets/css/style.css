@@ -840,3 +840,51 @@ form.lead-form { display: grid; gap: 14px; }
   .hero__grid { grid-template-columns: 1.05fr .95fr; align-items: center; }
   .hero__metrics { grid-template-columns: 1fr; max-width: 340px; }
 }
+
+/* =========================================================
+   MOBILE STRUCTURE — clearer, tighter phone layout
+   ========================================================= */
+@media (max-width: 700px) {
+  /* Hero: drop the decorative building (eats a whole screen), tighten rhythm */
+  .hero { padding: 30px 0 36px; }
+  .hero__grid { gap: 24px; }
+  .hero__visual { display: none; }
+  .hero__badge { margin-bottom: 16px; }
+  .hero__year { margin: 10px 0 16px; }
+  .hero__sub { margin-bottom: 20px; }
+  .hero__tags { margin-bottom: 14px; gap: 7px; }
+  .hero__tags--extra { display: none; }           /* hide duplicate direction tags */
+  .hero__actions { gap: 10px; }
+  .hero__actions .btn { flex: 1 1 46%; padding: 15px 14px; }
+  .hero__metrics { margin-top: 2px; gap: 10px; }
+  .metric-chip { padding: 13px 16px; gap: 12px; }
+  .metric-chip b { font-size: 1.6rem; }
+  .metric-chip span { font-size: .9rem; }
+
+  /* Tighter vertical rhythm so the page is far shorter */
+  .section { padding: 42px 0; }
+  .section--tight { padding: 32px 0; }
+  .section-head { margin-bottom: 22px; }
+  .section-head .lead, .stats-head .lead { font-size: 1rem; }
+
+  /* Numbers read clearer with a touch less cramping */
+  .stats { gap: 10px; }
+  .stat { padding: 20px 18px; }
+  .stats-head { margin-bottom: 20px; gap: 12px; }
+
+  /* Country facts: clean vertical stack */
+  .country { flex-direction: column; align-items: flex-start; gap: 14px; padding: 20px; }
+  .country__items { margin-left: 0; gap: 12px 22px; }
+
+  /* Film + geo tighten */
+  .film-grid { gap: 22px; }
+  .geo { gap: 22px; }
+  .geo__list { columns: 1; }
+
+  /* Section headings a bit smaller so they don't dominate the screen */
+  h2 { font-size: clamp(1.5rem, 7vw, 1.9rem); }
+
+  /* Footer: single clean column */
+  .footer-cols { grid-template-columns: 1fr; gap: 22px; }
+  .footer-top { gap: 26px; }
+}
