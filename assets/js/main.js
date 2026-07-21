@@ -307,6 +307,8 @@
     "film.a3": "Knowledge of regional specifics",
     "film.a4": "Integrated approach to development",
     "film.cap": "Corporate film",
+    "film.cta1": "Explore projects",
+    "film.cta2": "Discuss a project",
     // directions
     "dir.eyebrow": "What we do",
     "dir.title": "Four directions, one system",
@@ -447,6 +449,11 @@
     "about.lead.p1.d": "Leads the group's operations: construction, production and a regional network of 11 offices from Moscow to Vladivostok.",
     "about.lead.p2.tag": "Board member, Director for Development",
     "about.lead.p2.d": "Responsible for strategy and development, member of the General Council of Delovaya Rossiya. Represents the group at SPIEF, federal agencies and the regions.",
+    "about.lead.p3.tag": "Group top management",
+    "about.lead.p3.d": "Head of one of the group's key directions.",
+    "about.lead.p4.tag": "Trade division — AP TRADE",
+    "about.lead.p4.d": "Head of the group's trade division — special machinery, containers and logistics.",
+    "about.lead.tbd": "Name to be confirmed",
     // SERVICES page
     "serv.h1": "Full cycle — from investment to keys",
     "serv.sub": "A vertically integrated group uniting development, logistics, our own production and investment into one system.",
@@ -555,6 +562,7 @@
     "cont.off.t": "We are nearby — in 11 cities",
     "cont.off.hq": "Head office",
     "cont.off.rec": "Reception",
+    "cont.off.trade": "Trade division · AP TRADE",
     "cont.off.br": "Branch",
     "cont.off.msk2": "Moscow · Federation Tower",
     "cont.off.msk2.a": "12 Presnenskaya Emb., Federation complex, West Tower",
